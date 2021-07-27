@@ -1,0 +1,18 @@
+﻿@model DotNetCoreConfiguration.Models.MySettingsViewModel
+
+<html>
+<body>
+    音量:@Model.Volume
+    <br />
+    靜音:@(Model.IsMute?"是":"否")
+    <br />
+    解析度:@Model.Display
+    <br />
+    輸入設定:
+    <br />
+    上:@Model.InputMapping.Up
+    下:@Model.InputMapping.Down
+    左:@Model.InputMapping.Left
+    右:@Model.InputMapping.Right
+</body>
+</html>
